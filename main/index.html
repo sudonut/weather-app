@@ -7,19 +7,22 @@
     <title>Weather</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/37cb0d4f63.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@100;300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
     <div id="app">
       <div id="content">
+        <div id="zip-wrap">
+          <input id="zip-code" placeholder="Please enter your zipcode" type="text">
+          <input type="submit" id="city-search" value="Find City">
+        </div>
         <h1 id="location">Detroit, MI</h1>
-        <p id="weather">Cloudy</p>
-        <p id="temp">41°F</p>
-        <input id="zip-code" type="text">
+        <i class="fas fa-cloud-rain" id="weather"></i>
+        <p id="temp"></p>
       </div>
-
     </div>
     <script src="/script/script.js" async defer></script>
   </body>
